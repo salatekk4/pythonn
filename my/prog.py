@@ -11,6 +11,9 @@ while True:
     title = title.strip()
     if title.lower() == "стоп":
         break
+    if len(title) == 0:
+        print("Название не может быть пустым")
+        continue
     else:
         try:
             ttime = int(input("сколько минут "))
